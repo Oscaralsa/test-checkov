@@ -20,9 +20,8 @@ class test(BaseResourceCheck):
     def scan_resource_conf(self, conf):
         # Replace this with the custom logic for your check
         if conf.get("VpcConfig",[]):
-
-            isEmpty = conf["VpcConfig"]
-            if isEmpty != []:
+            #isEmpty = conf["VpcConfig"]
+            #if isEmpty != []:
                 return CheckResult.PASSED
         return CheckResult.FAILED
 
